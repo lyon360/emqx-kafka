@@ -1,0 +1,14 @@
+{application, emqx_plugin_kafka,
+ [{description, "EMQ X Plugin Kafka"},
+  {vsn, "git"},
+  {modules, []},
+  {registered, [emqx_plugin_kafka_sup]},
+  {applications, [kernel,stdlib, erlkaf]},
+  {mod, {emqx_plugin_kafka_app,[]}},
+  {env, []},
+  {licenses, ["Apache-2.0"]},
+  {maintainers, ["yyzzjj0515@yeah.net"]},
+  {links, [{"Homepage", "https://github.com/yyzzjj"},
+           {"Github", "https://github.com/yyzzjj/emqx-plugin-kafka"}
+          ]}
+ ]}.
